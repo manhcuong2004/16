@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 2.12 - Thiết kế trang web</title>
+    <style>
+        td {
+            vertical-align: top;
+            padding: 10px;
+            height: auto;
+        }
+
+
+        .main-news {
+            font-weight: bold;
+        }
+
+        .main-image {
+            width: 100%;
+            height: auto;
+        }
+
+        .side-news img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .side-news {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .side-news a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .text-content {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <table width="100%" ;>
+        <tr>
+            <td style="width: 50%;">
+                <img src="image.jpg" alt="Cầu thủ Việt Nam" class="main-image">
+                <div class="text-content">
+                    <p>'Iran có thể lực và tấn công tốt, tuyển Việt Nam cần hạn chế bàn thua'</p>
+                    <p>Zing | 4 giờ | 14 liên quan</p>
+                </div>
+            </td>
+
+            <td style="width: 50%;">
+                <div class="side-news">
+                    <img src="image.jpg" alt="Nguyễn Phú Trọng">
+                    <div>
+                        <p>Tổng Bí thư, Chủ tịch nước Nguyễn Phú Trọng</p>
+                        <p>Zing | 4 giờ | 14 liên quan</p>
+                    </div>
+
+                </div>
+                <div class="side-news">
+                    <img src="image.jpg" alt="Carlos Queiroz">
+                    <a href="#">HLV Carlos Queiroz: 'Trận đấu với tuyển Việt Nam sẽ rất khó khăn'</a>
+                </div>
+                <div class="side-news">
+                    <img src="image.jpg" alt="Quế Ngọc Hải">
+                    <a href="#">Quế Ngọc Hải vắng mặt trong buổi tập trước trận gặp Iran</a>
+                </div>
+                <div class="side-news">
+                    <img src="image.jpg" alt="Việt Nam">
+                    <a href="#">Ảnh thủ lưới ở Việt Nam đoạt giải nhì cuộc thi flycam quốc tế</a>
+                </div>
+                <div class="side-news">
+                    <img src="image.jpg" alt="Chí Trung">
+                    <a href="#">Chí Trung chính thức tham gia Táo quân 2019</a>
+                </div>
+                <div class="side-news">
+                    <img src="image.jpg" alt="TTXVN">
+                    <a href="#">TTXVN là 1 trong 2 đơn vị bảo trợ thông tin Năm Du lịch Quốc gia 2019</a>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Table</title>
+</head>
+
+<body>
+
+    <form>
+        <h2 style="color: red; text-align: center;">Book a Table</h2>
+
+        <!-- Your name -->
+        <fieldset style="display: flex; justify-content: center;">
+            <legend style="text-align:center">Your name:</legend>
+            <input type="text" name="name" required>
+        </fieldset>
+        <br>
+
+        <!-- Sex -->
+        <fieldset style="display: flex; justify-content: center;">
+            <legend style="text-align:center">Sex:</legend>
+            <input type="radio" id="male" name="sex" value="Male">
+            <label for="male" style="margin-right: 20px;">Male</label>
+            <input type="radio" id="female" name="sex" value="Female" checked>
+            <label for="female">Female</label>
+        </fieldset>
+        <br>
+
+        <!-- Size -->
+        <fieldset style="display: flex; justify-content: center;">
+            <legend style="text-align:center">Size:</legend>
+            <input type="radio" id="2-person" name="size" value="2-person table">
+            <label for="2-person" style="margin-right: 20px;">2-person table</label>
+            <input type="radio" id="4-person" name="size" value="4-person table" checked>
+            <label for="4-person" style="margin-right: 20px;">4-person table</label>
+            <input type="radio" id="6-person" name="size" value="6-person table">
+            <label for="6-person">6-person table</label>
+        </fieldset>
+        <br>
+
+        <!-- Location -->
+        <fieldset style="display: flex; justify-content: center;">
+            <legend style="text-align:center">Location:</legend>
+            <input type="radio" id="indoors" name="location" value="Indoors">
+            <label for="indoors" style="margin-right: 20px;">Indoors</label>
+            <input type="radio" id="outdoors" name="location" value="Outdoors" checked>
+            <label for="outdoors">Outdoors</label>
+        </fieldset>
+        <br>
+        <!-- Submit button -->
+        <div style="text-align: center">
+            <button type="submit">Book table</button>
+        </div>
+    </form>
+
+</body>
+
+</html>
