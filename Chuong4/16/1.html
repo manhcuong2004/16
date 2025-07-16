@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 style="text-align: center; color:green">Chào mừng bạn đến với trang web của chúng tôi !!</h1>
+    <div id="showtime" style="text-align: center;">Hôm nay là:</div>
+    <script>
+        function Stime() {
+            document.getElementById('showtime').innerHTML = "Hôm nay là: " + new Date();
+        }
+
+        window.onload = Stime;
+    </script>
+</body>
+
+</html>

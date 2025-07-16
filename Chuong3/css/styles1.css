@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+}
+
+
+.navbar {
+    background-color: black;
+    height: auto;
+    display: flex;
+    width: 100%;
+}
+
+.navbar .container {
+    display: flex;
+    width: 100%;
+    padding: 5px;
+}
+
+.navbar-brand {
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+    margin-left: 10%;
+    text-decoration: none;
+    width: 50%;
+}
+
+.navbar-nav {
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+    gap: 20px;
+    align-items: center;
+    margin-right: 80px;
+    flex-wrap: wrap;
+
+
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.section1 {
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    padding: 50px 100px;
+}
+
+.section1 .container {
+    padding: 10px 60px;
+    height: auto;
+    display: inline-flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #F8F9FA;
+    grid: auto;
+}
+
+.section1 .container .items-container {
+    padding: 5px;
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+
+
+.section1 .container .title {
+    font-size: 300%;
+    font-weight: bold;
+    text-align: center;
+}
+
+.section1 .container .text {
+    font-size: 30px;
+    text-align: center;
+}
+
+
+.section1 .container .btn {
+    font-size: 20px;
+    padding: 15px 10px;
+    color: white;
+    text-align: center;
+    background-color: #0B5ED7;
+    text-decoration: none;
+    border: 0;
+    border-radius: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.section2 {
+    padding: 10px 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section2 .container {
+    padding: 5px;
+    padding-top: 30px;
+    display: grid;
+    flex-wrap: wrap;
+    gap: 40px 40px;
+    grid-template-columns: auto auto auto;
+}
+
+.section2 .container .card {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section2 .container .box-one .card {
+    padding: 40px;
+    background-color: #F8F9FA;
+    height: fit-content;
+}
+
+.section2 .box-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0B5ED7;
+    color: white;
+    padding: 5px;
+    font-size: 30px;
+    border-radius: 15px;
+    height: 3rem;
+    width: 3rem;
+    margin-top: -60px;
+}
+
+.section2 .title {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.section2 .text {
+    font-size: 20px;
+    text-align: center;
+}
+
+.section2 .container .box-two .card {
+    padding: 40px;
+    background-color: #F8F9FA;
+    height: fit-content;
+}
+
+.section2 .container .box-three .card {
+    padding: 40px;
+    background-color: #F8F9FA;
+    height: fit-content;
+}
+
+.section2 .container .box-four .card {
+    padding: 40px;
+    background-color: #F8F9FA;
+    height: fit-content;
+}
+
+.section2 .container .box-five .card {
+    padding: 40px;
+    background-color: #F8F9FA;
+    height: fit-content;
+}
+
+.section2 .container .box-six .card {
+    padding: 40px;
+    background-color: #F8F9FA;
+    height: fit-content;
+}
+
+footer {
+    height: 100px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .text {
+    color: white;
+    font-size: large;
+}
+
+@media screen and (max-width: 1000px) {
+    .section2 .container {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .section2 .container {
+        grid-template-columns: auto;
+    }
+}

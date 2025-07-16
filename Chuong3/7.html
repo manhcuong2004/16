@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <style>
+        .container {
+            padding: 10px;
+            display: flex;
+            gap: 20px;
+
+            .product {
+                height: auto;
+                width: 300px;
+                background: #fdfdfd;
+
+                .prc {
+                    display: flex;
+                    justify-content: center;
+                }
+
+                .title {
+                    font-size: 120%;
+                    padding-left: 10px;
+                }
+
+                .container-price {
+                    display: flex;
+                    padding-left: 10px;
+                    gap: 7px;
+
+                    .price {
+                        font-weight: 600;
+
+                    }
+
+                    .price-del {
+                        color: gray;
+                    }
+
+                    .discount {
+                        color: red;
+                        font-weight: 700;
+                    }
+                }
+
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .product {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="product">
+            <div class="prc"><img src="image.png" alt="iPhone 6" width="200px" height="300px"></div>
+            <div class="title">Điện Thoại iPhone 6 32GB VN/A (Vàng đồng) Hàng Chính Hãng</div>
+            <div class="container-price">
+                <p class="price">6.199.000 đ</p>
+                <p class="price-del"><del>8.990.000 đ</del></p>
+                <p class="discount">-31%</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="prc"><img src="image.png" alt="iPhone 6" width="200px" height="300px"></div>
+            <div class="title">Điện Thoại iPhone 6 32GB VN/A (Vàng đồng) Hàng Chính Hãng</div>
+            <div class="container-price">
+                <p class="price">6.199.000 đ</p>
+                <p class="price-del"><del>8.990.000 đ</del></p>
+                <p class="discount">-31%</p>
+            </div>
+        </div>
+
+
+        <div class="product">
+            <div class="prc"><img src="image.png" alt="iPhone 6" width="200px" height="300px"></div>
+            <div class="title">Điện Thoại iPhone 6 32GB VN/A (Vàng đồng) Hàng Chính Hãng</div>
+            <div class="container-price">
+                <p class="price">6.199.000 đ</p>
+                <p class="price-del"><del>8.990.000 đ</del></p>
+                <p class="discount">-31%</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

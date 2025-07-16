@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header,
+        footer,
+        aside,
+        main {
+            padding: 20px;
+            color: white;
+        }
+
+        header {
+            background-color: red;
+        }
+
+        footer {
+            background-color: lightgreen;
+        }
+
+        aside {
+            background-color: yellow;
+        }
+
+        main {
+            background-color: blue;
+        }
+
+        .aside-2 {
+            background-color: pink;
+        }
+
+        @media (min-width: 1024px) {
+            .container {
+                display: grid;
+                grid-template-columns: 1fr 2fr 1fr;
+                grid-template-rows: auto 1fr auto;
+                grid-template-areas:
+                    "header header header"
+                    "aside1 main aside2"
+                    "footer footer footer";
+            }
+
+            header {
+                grid-area: header;
+            }
+
+            aside:nth-child(1) {
+                grid-area: aside1;
+            }
+
+            aside.aside-2 {
+                grid-area: aside2;
+            }
+
+            main {
+                grid-area: main;
+            }
+
+            footer {
+                grid-area: footer;
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 1023px) {
+            .container {
+                display: grid;
+                grid-template-columns: 1fr 2fr;
+                grid-template-rows: auto 1fr auto;
+                grid-template-areas:
+                    "header header"
+                    "main aside1"
+                    "footer footer";
+            }
+
+            header {
+                grid-area: header;
+            }
+
+            aside:nth-child(1) {
+                grid-area: aside1;
+            }
+
+            main {
+                grid-area: main;
+            }
+
+            footer {
+                grid-area: footer;
+            }
+
+            aside.aside-2 {
+                display: none;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .container {
+                display: flex;
+                flex-direction: column;
+            }
+
+            aside,
+            main,
+            header,
+            footer {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>Header</header>
+        <aside>Aside 1</aside>
+        <main>Main Content</main>
+        <aside class="aside-2">Aside 2</aside>
+        <footer>Footer</footer>
+    </div>
+</body>
+
+</html>

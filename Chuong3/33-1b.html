@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout Task b</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 50px 50px 50px;
+            gap: 5px 5px;
+            height: auto;
+            background-color: #FF8C00;
+            padding: 5px;
+        }
+
+        .grid-item {
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .header {
+            grid-column: 1/4;
+            background-color: #FFE4C4;
+        }
+
+        .menu {
+            grid-row: 2/4;
+            background-color: #FFE4C4;
+        }
+
+        .main {
+            background-color: #FFE4C4;
+        }
+
+        .right {
+            background-color: #FFE4C4;
+        }
+
+        .footer {
+            grid-column: 2/4;
+            background-color: #FFE4C4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="grid-item header">header</div>
+        <div class="grid-item menu">menu</div>
+        <div class="grid-item main">main</div>
+        <div class="grid-item right">right</div>
+        <div class="grid-item footer">footer</div>
+    </div>
+</body>
+
+</html>

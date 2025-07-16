@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form id="myForm">
+        <label id="inputText" for="inputText">Ahihi</label><br><br>
+        <button type="button" onclick="increaseFontSize()">Phóng to</button>
+        <button type="button" onclick="decreaseFontSize()">Thu nhỏ</button>
+    </form>
+
+    <script>
+        let fontSize = 16;
+
+        function increaseFontSize() {
+            fontSize += 2;
+            document.getElementById("inputText").style.fontSize = fontSize + "px";
+        }
+
+        function decreaseFontSize() {
+            fontSize -= 2;
+            if (fontSize < 10) fontSize = 10;
+            document.getElementById("inputText").style.fontSize = fontSize + "px";
+        }
+    </script>
+
+</body>
+
+</html>

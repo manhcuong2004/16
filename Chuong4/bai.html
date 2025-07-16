@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thành phố Việt Nam</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+
+        img {
+            width: 70%;
+            height: auto;
+            border: 5px solid transparent;
+            border-radius: 10px;
+        }
+
+        img.active {
+            border-color: crimson;
+        }
+
+        .buttons {
+            margin-top: 20px;
+        }
+
+        .buttons button {
+            background-color: crimson;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .buttons button:hover {
+            background-color: darkred;
+        }
+    </style>
+</head>
+
+<body>
+    <img id="cityImage" src="./Pic1.png" alt="Thành phố Huế" width="300px" height="200px">
+    <div class="buttons">
+        <button onclick="changeCity('hanoi')">Hà Nội</button>
+        <button onclick="changeCity('hue')">Huế</button>
+        <button onclick="changeCity('danang')">Đà Nẵng</button>
+    </div>
+
+    <script>
+        function changeCity(city) {
+            const image = document.getElementById("cityImage");
+
+            if (city === "hanoi") {
+                image.src = "./Pic1.png";
+                image.alt = "Thành phố Hà Nội";
+            } else if (city === "hue") {
+                image.src = "./Pic2.png";
+                image.alt = "Thành phố Huế";
+            } else if (city === "danang") {
+                image.src = "./Pic3.png";
+                image.alt = "Thành phố Đà Nẵng";
+            }
+
+            image.classList.add("active");
+        }
+    </script>
+</body>
+
+</html>

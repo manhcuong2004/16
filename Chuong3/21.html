@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #008B8B;
+
+        }
+
+        .register-form {
+            padding: 20px 10px;
+            width: 70%;
+            border: 1px solid white;
+
+        }
+
+        .register-form h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        .register-form input {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+        }
+
+
+        @media (max-width: 640px) {
+            .container {
+                background-color: #008B8B;
+
+            }
+
+            .register-form {
+                border: 1px solid white;
+                width: 90%;
+            }
+
+
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                background-color: #8A2BE2;
+
+            }
+
+            .register-form {
+                border: 1px solid white;
+                width: 70%;
+                padding-right: 30px;
+            }
+
+            .register-form input {
+                width: 70%;
+                padding: 10px;
+                margin-bottom: 15px;
+                border: 1px solid #ccc;
+            }
+
+            .register-form .name {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .register-form .dob {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .register-form .email {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .register-form .SDT {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+        }
+
+        @media (min-width: 1024px) {
+            .container {
+                background-color: #1f3bb3;
+
+            }
+
+            .register-form {
+                border: 1px solid white;
+                width: 70%;
+                padding-right: 30px;
+            }
+
+            .register-form input {
+                width: 70%;
+                padding: 10px;
+                margin-bottom: 15px;
+                border: 1px solid #ccc;
+            }
+
+            .register-form .name {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .register-form .dob {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .register-form .email {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .register-form .SDT {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="#" class="register-form">
+            <div class="name">
+                <h2>Họ tên</h2>
+                <input type="text">
+            </div>
+
+            <div class="dob">
+                <h2>Ngày sinh</h2>
+                <input type="date">
+            </div>
+
+            <div class="email">
+                <h2>Email</h2>
+                <input type="email">
+            </div>
+
+            <div class="SDT">
+                <h2>SDT</h2>
+                <input type="text">
+            </div>
+            <button type="submit">Đăng ký</button>
+        </form>
+    </div>
+</body>
+
+</html>

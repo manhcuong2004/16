@@ -7,30 +7,31 @@
     <title>Mango Booking Form</title>
 </head>
 
-<body style="display: flex; justify-content: center; align-items: center; height: 100vh">
+<body>
 
-    <form>
-        <p style="text-align: center;"><img src="" alt="Mongo"></p>
-        <p style="text-align: center;">
-            <label for="email" style="text-align: center;">Email Address</label>
-            <input type="email" id="email" name="email" required>
-        </p>
-        <p style="text-align: center;">
-            <label for="date">Date of Booking</label>
-            <input type="date" id="date" name="date" required>
-        </p>
-        <p style="text-align: center;">
-            <label for="people">Number of people</label>
-            <input type="number" id="people" name="people" min="1" max="8" required>
-        </p>
-        <p style="text-align: center;">
-            <input type="checkbox" id="agree" name="agree" required>
-            <label for="agree">I agree to the cancellation policy</label>
-        </p>
-        <p style="text-align: center;">
-            <button type="submit">Book Now</button>
-        </p>
+    <form action="">
+        <div style="padding: 10px">
+            <label for="">Họ tên:</label>
+            <input type="text">
+        </div>
+        <div style="padding: 10px">
+            <label for="">Ngày sinh:</label>
+            <input type="date">
+        </div>
+        <div style="padding: 10px">
+            <label for="">Địa chỉ:</label>
+            <textarea name="" id=""></textarea>
+        </div>
+        <div style="padding: 10px">
+            <label for="">Giới tính:</label>
 
+            <input type="radio" name="sex" check> Nam
+            <input type="radio" name="sex"> Nữ
+        </div>
+        <div style="padding: 10px">
+            <input type="button" value="Gửi">
+            <input type="button" value="Xóa">
+        </div>
     </form>
 </body>
 

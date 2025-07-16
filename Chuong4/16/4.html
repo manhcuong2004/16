@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;" onmouseenter="message()" onmouseout="clearMessage()">Hãy di chuột vào đoạn văn này
+        để thông báo</h1>
+    <p style="color: red; text-align: center; font-size: 150%"></p>
+    <script>
+        function message() {
+            document.getElementsByTagName('p')[0].innerHTML = "Bạn vừa di chuột vào đoạn văn";
+        }
+
+        function clearMessage() {
+            document.getElementsByTagName('p')[0].innerHTML = "";
+        }
+    </script>
+</body>
+
+</html>

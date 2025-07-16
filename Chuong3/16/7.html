@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout Task b</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-areas: 'item1 item2 item2'
+                'item1 item3 item4'
+                'item5 0 0'
+            ;
+            gap: 10px 10px;
+            height: 200px;
+
+        }
+
+        .grid-item {
+            background-color: rgb(110, 175, 255);
+        }
+
+        .item1 {
+            grid-area: item1;
+        }
+
+        .item2 {
+            grid-area: item2;
+        }
+
+        .grid-item {
+            background-color: #20e9ff;
+            padding: 10px;
+            font-size: 20px;
+            text-align: center;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="grid-item item1">Mục 1</div>
+        <div class="grid-item item2">Mục 2</div>
+        <div class="grid-item item3">Mục 3</div>
+        <div class="grid-item item4">Mục 4</div>
+        <div class="grid-item item5">Mục 5</div>
+
+    </div>
+</body>
+
+</html>
